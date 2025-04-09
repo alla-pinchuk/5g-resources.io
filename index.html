@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5G: Hands-On Resources</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #f7f9fb;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #0055aa;
+    }
+    code {
+      background-color: #e6e6e6;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    a {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>5G: Hands-On Resources</h1>
+  <p>Ця сторінка створена як продовження воркшопу <strong>"5G: простіше, ніж здається"</strong> на IT Future Fest 2025.</p>
+
+  <h2>🔧 Основні інструменти</h2>
+  <table>
+    <tr><th>Назва</th><th>Опис</th><th>Посилання</th></tr>
+    <tr><td>Open5GS</td><td>Ядро мобільної мережі (AMF, SMF, UPF)</td><td><a href="https://github.com/open5gs/open5gs">GitHub</a></td></tr>
+    <tr><td>UERANSIM</td><td>Симулятор користувача (UE) та базової станції (gNB)</td><td><a href="https://github.com/aligungr/UERANSIM">GitHub</a></td></tr>
+    <tr><td>srsRAN</td><td>Повноцінна LTE/5G платформа з підтримкою SDR</td><td><a href="https://github.com/srsran/srsRAN_Project">GitHub</a></td></tr>
+    <tr><td>Free5GC</td><td>Альтернативне 5G ядро з GUI</td><td><a href="https://github.com/free5gc/free5gc">GitHub</a></td></tr>
+  </table>
+
+  <h2>🚀 Як зібрати власну 5G-мережу</h2>
+  <ol>
+    <li>Встановити Ubuntu (рекомендовано 20.04 або 22.04)</li>
+    <li>Склонуйте репозиторії:
+      <pre><code>git clone https://github.com/open5gs/open5gs
+git clone https://github.com/aligungr/UERANSIM</code></pre>
+    </li>
+    <li>Зберіть проєкти та налаштуйте конфіги (див. README кожного проєкту)</li>
+    <li>Запустіть core (Open5GS) та UE/gNB (UERANSIM)</li>
+    <li>Перевірте з'єднання (registration success, ping UE ↔ core)</li>
+  </ol>
+
+  <h2>📚 Документація та гайди</h2>
+  <ul>
+    <li><a href="https://open5gs.org/open5gs/docs/">Open5GS Docs</a></li>
+    <li><a href="https://github.com/aligungr/UERANSIM/wiki">UERANSIM Wiki</a></li>
+    <li><a href="https://free5gc.org">Free5GC Manual</a></li>
+    <li><a href="https://www.youtube.com/results?search_query=build+5g+core+open5gs">YouTube: 5G core in 15 mins</a></li>
+  </ul>
+
+  <h2>🌍 Де це працює</h2>
+  <ul>
+    <li>Мережа 5G у КАІ (Kyiv Aviation Institute)</li>
+    <li>Тестові зони в університетах Європи та США</li>
+    <li>Стартапи з приватними 5G-мережами</li>
+  </ul>
+
+  <h2>🤝 Зв'язок і долучення</h2>
+  <p>Хочеш приєднатись або отримати PDF з презентації?</p>
+  <ul>
+    <li>Email: <a href="mailto:kai5gteam@kai.edu.ua">kai5gteam@kai.edu.ua</a></li>
+    <li><a href="https://t.me/your5gteam">Telegram-група</a></li>
+  </ul>
+
+  <h2>🔗 Завантаження</h2>
+  <ul>
+    <li><a href="https://yourlink.com">Слайди презентації (PDF)</a></li>
+    <li><a href="https://yourlink.com">Інструкція зі збірки 5G мережі</a></li>
+    <li><a href="https://github.com/yourname/5g-workshop">GitHub-репозиторій</a></li>
+  </ul>
+
+  <blockquote>
+    5G — це не лише для великих компаній. Це інструмент, який вже зараз доступний кожному.
+  </blockquote>
+</body>
+</html>
