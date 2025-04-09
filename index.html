@@ -6,40 +6,90 @@
   <title>5G: Hands-On Resources</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       line-height: 1.6;
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 2rem;
-      background: #f7f9fb;
-      color: #222;
+      background-color: #fff;
+      color: #111;
     }
-    h1, h2, h3 {
-      color: #0055aa;
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
-    code {
-      background-color: #e6e6e6;
-      padding: 2px 4px;
-      border-radius: 4px;
+    h2 {
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      color: #333;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #0056d2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 1rem 0;
+      margin-top: 1rem;
+      background: #f4f4f4;
     }
     th, td {
-      padding: 0.5rem;
       border: 1px solid #ccc;
+      padding: 0.75rem;
       text-align: left;
     }
-    a {
-      color: #0066cc;
+    th {
+      background: #e6ecf2;
+    }
+    code, pre {
+      background: #f2f2f2;
+      padding: 0.5rem;
+      display: block;
+      overflow-x: auto;
+    }
+    blockquote {
+      margin-top: 3rem;
+      padding: 1rem;
+      background: #f0f6ff;
+      border-left: 4px solid #0077ff;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
   <h1>5G: Hands-On Resources</h1>
   <p>Ця сторінка створена як продовження воркшопу <strong>"5G: простіше, ніж здається"</strong> на IT Future Fest 2025.</p>
+
+  <h2>📖 Навчальні ресурси</h2>
+  <h3>Основи та архітектура 5G</h3>
+  <ul>
+    <li><a href="https://www.viavisolutions.com/en-uk/what-5g-architecture">What is 5G Architecture?</a></li>
+    <li><a href="https://youtu.be/mOIRyffPNMY?si=1340oN4vx4G2JkIE">5G Fundamentals</a></li>
+    <li><a href="https://www.3gpp.org/technologies/5g-system-overview">5G System Overview</a></li>
+  </ul>
+
+  <h3>Додатково: основи для практики</h3>
+  <ul>
+    <li><a href="https://medium.com/@subhampradhan966/linux-fundamentals-and-basic-commands-30a1ea72ea11">Linux Fundamentals and Basic Commands</a></li>
+    <li><a href="https://docker-curriculum.com/">Основи Docker (Docker Curriculum)</a></li>
+  </ul>
 
   <h2>🔧 Основні інструменти</h2>
   <table>
@@ -57,10 +107,11 @@
   <h2>🚀 Як зібрати власну 5G-мережу</h2>
   <ol>
     <li>Встановити Ubuntu (рекомендовано 20.04 або 22.04)</li>
-    <li>Склонуйте репозиторії:
-      <pre><code>git clone https://github.com/open5gs/open5gs
+    <li>Склонуйте репозиторії:</li>
+  </ol>
+  <pre><code>git clone https://github.com/open5gs/open5gs
 git clone https://github.com/aligungr/UERANSIM</code></pre>
-    </li>
+  <ol start="3">
     <li>Зберіть проєкти та налаштуйте конфіги (див. README кожного проєкту)</li>
     <li>Запустіть core (Open5GS) та UE/gNB (UERANSIM)</li>
     <li>Перевірте з'єднання (registration success, ping UE ↔ core)</li>
@@ -72,9 +123,6 @@ git clone https://github.com/aligungr/UERANSIM</code></pre>
     <li><a href="https://github.com/aligungr/UERANSIM/wiki">UERANSIM Wiki</a></li>
     <li><a href="https://free5gc.org">Free5GC Manual</a></li>
     <li><a href="https://www.youtube.com/results?search_query=build+5g+core+open5gs">YouTube: 5G core in 15 mins</a></li>
-    <li><a href="https://gradiant.github.io/5g-charts/">Gradiant 5G Charts</a></li>
-    <li><a href="http://hackmd.io/@_ZfqOpYhTCq5xfvPo9Xb8g/BJh007lbh">Free5GC and UERANSIM Installation and Simulation</a></li>
-    <li><a href="https://medium.com/@googler_ram/100-opensource-5g-projects-that-you-can-get-your-hands-dirty-with-127a50967692">🤯100+ Opensource 5G project’s that you can get your hands dirty with.</a></li>
   </ul>
 
   <blockquote>
